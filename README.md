@@ -8,9 +8,9 @@ a todos os amantes de tecnologia noticias diarias sobre o que acontece no brasil
 
 #### Responsaveis: 
 <dl>
-    <dt>Joabe Kachorroski(kernelkill)</dt>
-    <dd>Analista de Segurança da Informação</dd>
+<dt>Joabe Kachorroski(kernelkill)</dt>
+<dd>Analista de Segurança da Informação</dd>
 
-    <dt>Thiago Marques(gnums)</dt>
-    <dd>Analista de Sistema</dd>
+<dt>Thiago Marques(gnums)</dt>
+<dd>Analista de Sistema</dd>
 </dl>
