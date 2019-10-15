@@ -7,5 +7,10 @@ a todos os amantes de tecnologia noticias diarias sobre o que acontece no brasil
 
 
 #### Responsaveis: 
-**Joabe Kachorroski(kernelkill)**
-**Thiago Marques(gnums)** 
+<dl>
+    <dt>Joabe Kachorroski(kernelkill)</dt>
+    <dd>Analista de Segurança da Informação</dd>
+
+    <dt>Thiago Marques(gnums)</dt>
+    <dd>Analista de Sistema</dd>
+</dl>
