@@ -1,4 +1,5 @@
-# Commitlinux em Desenvolvimento
+# Commitlinux em Desenvolvimento 
+![Commitlinux Blog](https://raw.githubusercontent.com/kernelkill/novosite/master/commitlinux.jpg)
 
 ### Projeto de Desenvolvimento de uma nova plataforma da Commitlinux.
 Esse projeto tem como objetivo desenvolver um site totalmente novo com novas funcionalidades 
