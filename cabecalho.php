@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>mjailton ligando você ao mundo do conhecimento</title>
+    <title>Commitlinux te atualizando todos os dias</title>
     <link href="css/estilo.css" rel="stylesheet" type="text/css">
     <link href="css/estilo-m.css" rel="stylesheet" type="text/css">		
 </head>
@@ -24,7 +24,7 @@
 						<li><a href="index.php?link=4">VÍDEOS</a></li>
 						<li><a href="index.php?link=6">LOGIN</a></li>
 						<li><a href="index.php?link=5">CADASTRAR</a></li>
-						<li><a href="index.php?link=5" class="usuario">TALRAS GOES</a></li>
+						<li><a href="index.php?link=5" class="usuario">JOABE</a></li>
 					</ul>
 				</div>
 			</div>

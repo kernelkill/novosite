@@ -9,7 +9,7 @@
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh elit euismod tincidunt ut consectetuer</p>
 										
 				</figure>
-				<span class="data"><small>Postado em: 20/11/2015</small><a href="index.php?link=2#cmt" class="ico-msg"></a></span>
+				<span class="data"><small>Postado em: 20/11/2019</small><a href="index.php?link=2#cmt" class="ico-msg"></a></span>
 			</article>
 			
 			<article>	
@@ -19,7 +19,7 @@
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh elit euismod tincidunt ut consectetuer</p>
 										
 				</figure>
-				<span class="data"><small>Postado em: 20/11/2015</small><a href="index.php?link=2#cmt" class="ico-msg"></a></span>
+				<span class="data"><small>Postado em: 20/11/2019</small><a href="index.php?link=2#cmt" class="ico-msg"></a></span>
 			</article>
 			
 			<article>	
@@ -29,7 +29,7 @@
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh elit euismod tincidunt ut consectetuer</p>
 										
 				</figure>
-				<span class="data"><small>Postado em: 20/11/2015</small><a href="index.php?link=2#cmt" class="ico-msg"></a></span>
+				<span class="data"><small>Postado em: 20/11/2019</small><a href="index.php?link=2#cmt" class="ico-msg"></a></span>
 			</article>
 			
 			</div>
@@ -45,7 +45,7 @@
 						<div class="texto">
 							<h3>Título referente ao post</h3></a>
 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh elit euismod tincidunt ut consectetuer</p>			
-							<span>Postado em: 20/11/2015 <a href="index.php?link=2#cmt" class="ico-msg"></a></span>
+							<span>Postado em: 20/11/2019 <a href="index.php?link=2#cmt" class="ico-msg"></a></span>
 						</div>
 					</article>
 					<article>
@@ -53,7 +53,7 @@
 						<div class="texto">
 							<h3>Título referente ao post</h3></a>
 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh elit euismod tincidunt ut consectetuer</p>			
-							<span>Postado em: 20/11/2015 <a href="index.php?link=2#cmt" class="ico-msg"></a></span>
+							<span>Postado em: 20/11/2019 <a href="index.php?link=2#cmt" class="ico-msg"></a></span>
 						</div>
 					</article>
 					<a href="index.php?link=3" class="btn direito">Ver todos os posts de php</a>
@@ -68,7 +68,7 @@
 						<div class="texto">
 							<h3>Lorem ipsum dolor sit amet, consectetuer sit adipiscing elit</h3></a>
 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh elit euismod tincidunt ut consectetuer elit nibh...</p>
-							<span>Postado em: 30/11/2015 <a href="index.php?link=2#cmt" class="ico-msg"></a></span>
+							<span>Postado em: 30/11/2019 <a href="index.php?link=2#cmt" class="ico-msg"></a></span>
 						</div>
 					</article>
 					
@@ -77,7 +77,7 @@
 						<div class="texto">
 							<h3>Lorem ipsum dolor sit amet, consectetuer sit adipiscing elit</h3></a>
 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh elit euismod tincidunt ut consectetuer elit nibh...</p>
-							<span>Postado em: 30/11/2015 <a href="index.php?link=2#cmt" class="ico-msg"></a></span>
+							<span>Postado em: 30/11/2019 <a href="index.php?link=2#cmt" class="ico-msg"></a></span>
 						</div>
 					</article>
 					
@@ -91,7 +91,7 @@
 						<div class="texto">
 							<h3>Lorem ipsum dolor sit amet, consectetuer sit adipiscing elit</h3></a>
 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh elit euismod tincidunt ut consectetuer elit nibh...</p>
-							<span>Postado em: 30/11/2015 <a href="index.php?link=2#cmt" class="ico-msg"></a></span>
+							<span>Postado em: 30/11/2019 <a href="index.php?link=2#cmt" class="ico-msg"></a></span>
 						</div>
 					</article>
 					
@@ -100,7 +100,7 @@
 						<div class="texto">
 							<h3>Lorem ipsum dolor sit amet, consectetuer sit adipiscing elit</h3></a>
 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh elit euismod tincidunt ut consectetuer elit nibh...</p>
-							<span>Postado em: 30/11/2015 <a href="index.php?link=2#cmt" class="ico-msg"></a></span>
+							<span>Postado em: 30/11/2019 <a href="index.php?link=2#cmt" class="ico-msg"></a></span>
 						</div>
 					</article>
 					

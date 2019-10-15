@@ -16,7 +16,7 @@
 				
 			</div>
 		</div>
-		<div class="copy">Copyright - 2015</div>
+		<div class="copy"> Commitlinux Copyright - 2019</div>
 	</div>
 </body>
 </html>
