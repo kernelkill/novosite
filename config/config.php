@@ -8,8 +8,8 @@
     define("CHARSET", "utf8");
 
 
-    @define('URL_BASE', 'http://localhost/commitlinux/');
-    @define('URL_ADMIN','http://localhost/commitlinux/admin/');
+    define('URL_BASE', 'http://localhost/commitlinux/');
+    define('URL_ADMIN','http://localhost/commitlinux/admin/');
 
 
 ?>
