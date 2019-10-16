@@ -25,14 +25,14 @@
 	<div class="conteudo">
 			<div class="cx-login">
 				<img src="imagens/img-login.png">
-				<form action="" method="post">
+				<form action="logar.php" method="post">
 				<label>
 					<strong>email</strong>
-					<input type="text" name="" id="" value="">
+					<input type="text" name="txt_login" id="" value="">
 				 </label>
 				 <label>
 					<strong>Senha</strong>
-					<input type="password" name="" id="" value="">
+					<input type="password" name="txt_senha" id="" value="">
 				 </label>
 				 <label>
 					<input type="submit" name="" id="" value="entrar" class="but">

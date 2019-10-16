@@ -2,9 +2,15 @@
 
     function abrirConexao(){
 
-        $conexao = @mysqli_connect(SERVIDOR,USUARIO,SENHA,BANCO) or die (mysqli_connect_error());
+        $conexao = @mysqli_connect(SERVIDOR,USUARIO,SENHA,BANCO);
         @mysqli_set_charset($conexao, CHARSET);
 
+        if ($conexao) {
+            echo "Conectado";
+        }else {
+            die (mysqli_connect_error());
+        }
+        
         return $conexao;
     }
 
