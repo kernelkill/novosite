@@ -1,7 +1,9 @@
 <?php 
 
+	//incluindo o cabeçalho
 	include "cabecalho.php"; 
 
+	//esse bloco de codigo é meu codigo de url amigavel
 	$url = (isset($_GET["url"])) ? $_GET["url"]: " ";
 	$explode = explode("/", $url);
 	$paginas = array("home", "categoria", "pesquisa", "post");
@@ -15,9 +17,8 @@
 			include "home.php";
 		}
 	}
-	
-	var_dump($explode);
 
+	//incluindo o rodapé da paginca
 	include "rodape.php";
 	
 ?>
