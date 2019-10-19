@@ -12,9 +12,50 @@
 
     //Incluindo aqui o cabecalho ja fatiado.
     include "cabecalho.php";
+?>
 
-    //Incluindo aqui o home ja fatiado.
-    include "home.php";
+    <!-- meio -->
+    <div class="conteudo">
+            <!--------------menu esquerdo---------------------->	
+        <div class="base-esq">	
+        <h1>PAINEL DE CONTROLE</h1>	
+            <div class="lado-esq">
+                    <ul>
+                        <li><a href="index.php?link=1">Home</a></li>
+                        <li><a href="index.php?link=2">Categorias</a> </li>				
+                        <li><a href="index.php?link=4">Posts</a> </li>
+                        <li><a href="lista_videos.html">Vídeos</a> </li>
+                        <li><a href="lista_comentarios.html">Comentários</a> </li>
+                        <li><a href="lista_usuario.html">Usuário</a> </li>
+                    </ul>
+                
+            </div>
+        </div>
+        
+        <!--------------fecha menu esquerdo---------------------->
+        
+        <?php 
+
+            @$link = $_GET["link"];
+
+            $pag[1] = "home.php";
+            $pag[2] = "lst/lst_categoria.php";
+            $pag[3] = "frm/frm_categoria.php";
+
+            if (!empty($link)) {
+                if (file_exists($pag[$link])) {
+                    include $pag[$link];
+                }else {
+                    include "home.php";
+                }
+            }else {
+                //Incluindo aqui o home ja fatiado.
+                include "home.php";
+            }
+        ?>
+    </div>
+
+<?php
 
     //incluindo aqui o rodape ja fatiado.
     include "rodape.php";

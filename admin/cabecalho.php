@@ -31,7 +31,7 @@
 				<a href="index.php?link=1"><img src="imagens/sua-logo.png"></a>
 			<div class="bemvindo">
 			<h2>BEM VINDO(A),</h2>
-			<h1>Joabe Kachorroski</h1>
+			<h1><?php echo $_SESSION["PCML"]["LOGIN"] ?></h1>
 			</div>
 			</section>
 			
