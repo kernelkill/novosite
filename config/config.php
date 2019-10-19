@@ -12,4 +12,3 @@
     define('URL_ADMIN','http://localhost/commitlinux/admin/');
 
 
-?>
