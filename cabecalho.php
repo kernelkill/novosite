@@ -31,7 +31,7 @@
 			<div class="topo-menu">
 			<div id="menu">
 				<a href="javascript:abreFecha('#mostrarmenu')" class="mobmenu">MENU</a>
-				<div class="conteudo" id="mostrarmenu">				
+				<div class="conteudos" id="mostrarmenu">				
 					<ul>
 						<li><a href="http://localhost/htmlblog/">home</a> </li>    
 						<li><a href="http://localhost/htmlblog/categorias.html">php</a> </li>    
