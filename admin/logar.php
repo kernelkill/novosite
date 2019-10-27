@@ -12,10 +12,10 @@ session_start();
         $cliente = consultar("usuario", "login = '$txt_login' and senha = '$txt_senha'");
         
         if ($cliente) {
-            $_SESSION["PCML"]["IDUSUARIO"] =$cliente[0]["id_usuario"];
-            $_SESSION["PCML"]["LOGIN"] =$cliente[0]["login"];
-            $_SESSION["PCML"]["SENHA"] =$cliente[0]["senha"];
-            $_SESSION["PCML"]["EMAIL"] =$cliente[0]["email"];
+            $_SESSION["PCML"]["IDUSUARIO"] = $cliente[0]["id_usuario"];
+            $_SESSION["PCML"]["LOGIN"] = $cliente[0]["login"];
+            $_SESSION["PCML"]["SENHA"] = $cliente[0]["senha"];
+            $_SESSION["PCML"]["EMAIL"] = $cliente[0]["email"];
 
             $url = URL_ADMIN;
             echo "<script type='text/javascript'> location.href='$url' </script>";

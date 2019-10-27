@@ -24,9 +24,9 @@
                         <li><a href="index.php?link=1">Home</a></li>
                         <li><a href="index.php?link=2">Categorias</a> </li>				
                         <li><a href="index.php?link=4">Posts</a> </li>
-                        <li><a href="lista_videos.html">Vídeos</a> </li>
-                        <li><a href="lista_comentarios.html">Comentários</a> </li>
-                        <li><a href="lista_usuario.html">Usuário</a> </li>
+                        <li><a href="#">Vídeos</a> </li>
+                        <li><a href="#">Comentários</a> </li>
+                        <li><a href="#">Usuário</a> </li>
                     </ul>
                 
             </div>
