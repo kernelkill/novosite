@@ -51,7 +51,7 @@
     function selecionar($sql){
         $qry = executar($sql);
 
-        if (!@mysqli_fetch_row($qry))
+        if (!@mysqli_num_rows($qry))
             return false;
         else{
             while ($linha = @mysqli_fetch_assoc($qry)){

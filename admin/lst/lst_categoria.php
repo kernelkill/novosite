@@ -31,7 +31,7 @@
 
         <?php 
             
-            $sql = "SELECT * FROM post";
+            $sql = "SELECT * FROM categoria";
 
             $total = total($sql);
 
@@ -40,7 +40,7 @@
             if ($total <= 0) {
                 echo "Nenhum item cadastrado";
             }else {
-                echo "Existe ". $total." itens cadastrados";
+                echo "Existem ". $total." registros.";
             
         ?>
                     
@@ -51,30 +51,26 @@
                   <td width="67%"  align="left" class="tdbc">Categoria</td>
                   <td  align="center" colspan="2"  class="tdbc">Ação</td>
                 </tr>
-                <tr  class="coluna1">
-                  <td  align="center">01</td>
-                  <td  align="left">PHP</td>
-                  <td width="14%" align="center"><a href="cadastro_categoria.html">Editar</a></td>
-                  <td width="13%" align="center"><a href="cadastro_categoria.html" class="excluir">Excluir</a></td>		
+               <?php 
+                    $categorias = selecionar($sql);
+                    var_dump($categorias);
+
+                    $i=0;
+                    foreach ($categorias as $categoria){ 
+                    
+                    if ($i%2==0) {
+                        $col="coluna1";
+                    }else {
+                        $col="coluna2";
+                    }
+               ?>
+                <tr class="<?php echo $col; ?>" >
+                  <td  align="center"><?php echo $categoria["id_categoria"]?></td>
+                  <td  align="left"><?php echo $categoria["categoria"]?></td>
+                  <td width="14%" align="center"><a href="index.php?link=3&id=<?php echo $categoria["id_categoria"]?>">Editar</a></td>
+                  <td width="13%" align="center"><a href="index.php?link=3&id=<?php echo $categoria["id_categoria"]?>" class="excluir">Excluir</a></td>		
               </tr>
-                <tr  class="coluna2">
-                  <td  align="center">02</td>
-                  <td  align="left">JAVA</td>
-                  <td align="center"><a href="cadastro_categoria.html">Editar</a></td>
-                  <td align="center"><a href="cadastro_categoria.html" class="excluir">Excluir</a></td>		
-              </tr>
-                <tr  class="coluna1">
-                  <td  align="center">03</td>
-                  <td  align="left">HTML</td>
-                  <td align="center"><a href="cadastro_categoria.html">Editar</a></td>
-                  <td align="center"><a href="cadastro_categoria.html" class="excluir">Excluir</a></td>		
-              </tr>
-                <tr  class="coluna2">
-                  <td  align="center">04</td>
-                  <td  align="left">CSS</td>
-                  <td align="center"><a href="cadastro_categoria.html">Editar</a></td>
-                  <td align="center"><a href="cadastro_categoria.html" class="excluir">Excluir</a></td>
-              </tr>
+               <?php $i++; } ?>
             </tbody>
         </table>
 
