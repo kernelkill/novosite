@@ -26,7 +26,7 @@
     </form>
 
     <h2>Lista de categorias</h2>
-    <a href="cadastro_categoria.html">Cadastrar categorias </a>
+    <a href="index.php?link=3">Cadastrar categorias </a>
     <p class="limpar">&nbsp;</p>
 
         <?php 
@@ -53,16 +53,13 @@
                 </tr>
                <?php 
                     $categorias = selecionar($sql);
-                    var_dump($categorias);
+                    //var_dump($categorias);
 
                     $i=0;
                     foreach ($categorias as $categoria){ 
                     
-                    if ($i%2==0) {
-                        $col="coluna1";
-                    }else {
-                        $col="coluna2";
-                    }
+                    $col = ($i%2==0)? "coluna1" : "coluna2";
+                    
                ?>
                 <tr class="<?php echo $col; ?>" >
                   <td  align="center"><?php echo $categoria["id_categoria"]?></td>
