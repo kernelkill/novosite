@@ -28,6 +28,21 @@
     <h2>Lista de categorias</h2>
     <a href="cadastro_categoria.html">Cadastrar categorias </a>
     <p class="limpar">&nbsp;</p>
+
+        <?php 
+            
+            $sql = "SELECT * FROM post";
+
+            $total = total($sql);
+
+            //echo "Existe ". $total." itens cadastrados"
+
+            if ($total <= 0) {
+                echo "Nenhum item cadastrado";
+            }else {
+                echo "Existe ". $total." itens cadastrados";
+            
+        ?>
                     
             <table width="100%" border="0" cellpadding="2" cellspacing="2">
             <tbody>
@@ -63,6 +78,8 @@
             </tbody>
         </table>
 
-</div>
-</div>
+            <?php } ?>
+
+        </div>
+    </div>
 </div>
