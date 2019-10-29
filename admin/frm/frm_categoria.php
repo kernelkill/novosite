@@ -1,11 +1,11 @@
 <?php 
 
-	$acao = isset($_GET["acao"])? $_GET["acao"] : 'Cadastrar';
-	$id	  = isset($_GET["id"])? $_GET["id"] : NULL;
+	@$acao		 = $_GET["acao"];
+	@$id	 	 = $_GET["id"];
 
 	if ($acao) {
 		$valores = consultar("categoria","id_categoria = $id");
-		var_dump($valores);
+		//var_dump($valores);
 	}
 	
 
@@ -31,8 +31,8 @@
 				<label>
 					<div class="cx-but">
 						<input type="hidden" name="id" value="<?php echo $id ?>">							
-						<input type="hidden" name="acao" value="<?php echo $acao  ?>">										
-						<input type="submit" value="<?php echo $acao?>" class="but">	
+						<input type="hidden" name="acao" value="<?php echo ($acao !="")? $acao: "Cadastrar" ?>">										
+						<input type="submit" value="<?php echo ($acao !="")? $acao: "Cadastrar" ?>" class="but">	
 					</div>
 					</label>
 			</form>
