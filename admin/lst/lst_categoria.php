@@ -64,8 +64,8 @@
                 <tr class="<?php echo $col; ?>" >
                   <td  align="center"><?php echo $categoria["id_categoria"]?></td>
                   <td  align="left"><?php echo $categoria["categoria"]?></td>
-                  <td width="14%" align="center"><a href="index.php?link=3&id=<?php echo $categoria["id_categoria"]?>">Editar</a></td>
-                  <td width="13%" align="center"><a href="index.php?link=3&id=<?php echo $categoria["id_categoria"]?>" class="excluir">Excluir</a></td>		
+                  <td width="14%" align="center"><a href="index.php?link=3&id=<?php echo $categoria["id_categoria"]?>&acao=Editar">Editar</a></td>
+                  <td width="13%" align="center"><a href="index.php?link=3&id=<?php echo $categoria["id_categoria"]?>&acao=Excluir" class="excluir">Excluir</a></td>		
               </tr>
                <?php $i++; } ?>
             </tbody>
