@@ -3,7 +3,11 @@
 	$acao = isset($_GET["acao"])? $_GET["acao"] : 'Cadastrar';
 	$id	  = isset($_GET["id"])? $_GET["id"] : NULL;
 
-	$valores = consultar("categoria","id_categoria = $id");
+	if ($acao) {
+		$valores = consultar("categoria","id_categoria = $id");
+		var_dump($valores);
+	}
+	
 
 	$categoria = isset($valores[0]["categoria"]) ? $valores[0]["categoria"]: NULL;
 	$slug_categoria = isset($valores[0]["slug_categoria"]) ? $valores[0]["slug_categoria"]: NULL;
@@ -21,14 +25,14 @@
 			  </label>
 			  <label>
 				<strong>Slug</strong>
-				<input type="text" name="txt_slug"  value="<?php echo $categoria ?>" size="110">
+				<input type="text" name="txt_slug"  value="<?php echo $slug_categoria ?>" size="110" disabled="disabled">
 			  </label>
 			  
 				<label>
 					<div class="cx-but">
 						<input type="hidden" name="id" value="<?php $id ?>">							
 						<input type="hidden" name="acao" value="<?php $acao ?>">										
-						<input type="submit" value="<?php $acao ?>" class="but">	
+						<input type="submit" value="<?php $acao?>" class="but">	
 					</div>
 					</label>
 			</form>
