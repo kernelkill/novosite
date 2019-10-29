@@ -30,9 +30,9 @@
 			  
 				<label>
 					<div class="cx-but">
-						<input type="hidden" name="id" value="<?php $id ?>">							
-						<input type="hidden" name="acao" value="<?php $acao ?>">										
-						<input type="submit" value="<?php $acao?>" class="but">	
+						<input type="hidden" name="id" value="<?php echo $id ?>">							
+						<input type="hidden" name="acao" value="<?php echo $acao  ?>">										
+						<input type="submit" value="<?php echo $acao?>" class="but">	
 					</div>
 					</label>
 			</form>
