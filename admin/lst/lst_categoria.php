@@ -77,7 +77,7 @@
             </tbody>
         </table>
             <div class="cx-paginacao">
-                mostraPaginacao("index.php?link=2", $ordem, $lpp, $total);
+              <?php echo mostraPaginacao("index.php?link=2", $ordem, $lpp, $total); ?>
             </div>
             <?php } ?>
 

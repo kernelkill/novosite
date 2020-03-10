@@ -31,7 +31,8 @@
 				<label>
 					<div class="cx-but">
 						<input type="hidden" name="id" value="<?php echo $id ?>">							
-						<input type="hidden" name="acao" value="<?php echo ($acao !="")? $acao: "Cadastrar" ?>">										
+						<input type="hidden" name="acao" value="<?php echo ($acao !="")? $acao: "Cadastrar" ?>">
+						<input type="button" name="cancel" value="cancel" onClick="window.location='index.php?link=2';" class="but">									
 						<input type="submit" value="<?php echo ($acao !="")? $acao: "Cadastrar" ?>" class="but">	
 					</div>
 					</label>
