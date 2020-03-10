@@ -10,20 +10,20 @@
         		
         		/* Oculta todas as abas */
         		
-        		$(conteudos + ' li').hide();
+        		$(conteudos + 'li').hide();
         		
         		/* Exibe a primeira aba */
         		
-        		$(conteudos + ' li:first-child').show();
+        		$(conteudos + 'li:first-child').show();
         		
         		/* Quando uma aba for clicada */
         		
-        		$(abas + ' a').click(function()
+        		$(abas + 'a').click(function()
         		{
         		
         			/* Remove todas as classes de todas as abas */
         		
-        			$(abas + ' a').removeClass('selected');
+        			$(abas + 'a').removeClass('selected');
         			
         			/* Acrescenta uma classe CSS marcando visualmente a aba como selecionada */
         			

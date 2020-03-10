@@ -7,7 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Commitlinux te atualizando todos os dias</title>
     <link href="css/estilo.css" rel="stylesheet" type="text/css">
-    <link href="css/estilo-m.css" rel="stylesheet" type="text/css">		
+	<link href="css/estilo-m.css" rel="stylesheet" type="text/css">	
+	
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/abas.js"></script>
 </head>
 <body>
 
