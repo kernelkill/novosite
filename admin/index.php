@@ -4,6 +4,7 @@
     session_start();
     require ('../config/config.php');
     require ('../config/crud.php');
+    require ('../config/biblio.php');
 
     //Verifica se tem uma sessão aberta para o usuario
     if (@$_SESSION["PCML"]["IDUSUARIO"] == "") {
