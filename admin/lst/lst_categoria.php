@@ -1,4 +1,8 @@
-
+<?php
+    $ordem = isset($_GET["ordem"]) ? $_GET["ordem"] : "0";
+    $campo = isset($_GET["campo"]) ? $_GET["campo"] : "";
+    $pesq = isset($_GET["pesq"]) ? $_GET["pesq"] : "";
+?>
 
 <div class="base-direita">
 <h1>Lista de categorias</h1>
@@ -70,7 +74,9 @@
                <?php $i++; } ?>
             </tbody>
         </table>
-
+            <div class="cx-paginacao">
+                mostraPaginacao("index.php?link=2", $ordem, $lpp, $total);
+            </div>
             <?php } ?>
 
         </div>
