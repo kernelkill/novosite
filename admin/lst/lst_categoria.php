@@ -56,7 +56,7 @@
                   <td  align="center" colspan="2"  class="tdbc">Ação</td>
                 </tr>
                <?php 
-                    $lpp = 2; //linha por paginas
+                    $lpp = 10; //linha por paginas
                     $inicio = $ordem * $lpp;
                     $categorias = selecionar($sql . " LIMIT $inicio, $lpp");
                     //var_dump($categorias);
