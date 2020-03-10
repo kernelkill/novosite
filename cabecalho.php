@@ -25,7 +25,7 @@
 					</form>
 					<ul>
 						<li><a href="index.php?link=4">VÍDEOS</a></li>
-						<li><a href="index.php?link=6">LOGIN</a></li>
+						<li><a href="http://localhost/commitlinux/admin/login.php">LOGIN</a></li>
 						<li><a href="index.php?link=5">CADASTRAR</a></li>
 						<li><a href="index.php?link=5" class="usuario">JOABE</a></li>
 					</ul>

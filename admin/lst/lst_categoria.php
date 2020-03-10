@@ -14,11 +14,11 @@
             <tbody>
                 <tr>
                     <th width="10%"><strong>Buscar:</strong></th>
-                    <th width="70%"><input type="text" name="pesq" value=""/></th>
+                    <th width="70%"><input type="text" name="pesq" value="<?php echo $pesq ?>"/></th>
                     <th>
                         <select name="campo">
                             <option value="categoria">categoria</option>
-                            <option value="ativo_categoria">Ativo (S ou N)</option>
+                            <!-- <option value="ativo_categoria">Ativo (S ou N)</option> -->
                         </select>
                     </th>
                     <input type="hidden" name="link" value="2"/>
@@ -35,7 +35,16 @@
 
         <?php 
             
-            $sql = "SELECT * FROM categoria";
+            if ($pesq == "") {
+                # code...
+                $sql = "SELECT * FROM categoria";
+                $complemento = "";
+            }else {
+                # code...
+                $sql = "SELECT * FROM categoria WHERE $campo LIKE '%$pesq%'";
+                $complemento = "&pesq=$pesq&campo=$campo";
+            }
+            
 
             $total = total($sql);
 
@@ -56,7 +65,7 @@
                   <td  align="center" colspan="2"  class="tdbc">Ação</td>
                 </tr>
                <?php 
-                    $lpp = 10; //linha por paginas
+                    $lpp = 5; //linha por paginas
                     $inicio = $ordem * $lpp;
                     $categorias = selecionar($sql . " LIMIT $inicio, $lpp");
                     //var_dump($categorias);
@@ -77,7 +86,7 @@
             </tbody>
         </table>
             <div class="cx-paginacao">
-              <?php echo mostraPaginacao("index.php?link=2", $ordem, $lpp, $total); ?>
+              <?php echo mostraPaginacao("index.php?link=2$complemento", $ordem, $lpp, $total); ?>
             </div>
             <?php } ?>
 
