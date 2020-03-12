@@ -49,11 +49,11 @@
 </label>
 
   <label><strong>Título do post</strong>
-   <input type="text" name="txt_curso" id="txt_curso" value="" size="110">
+   <input type="text" name="post"  value="<?php echo @$post; ?>" >
   </label>
 
   <label class="esq"><strong>Imagem</strong>
-  <input type="text" name="txt_imagem" id="txt_imagem" value="">
+  <input type="text" name="imagem"  value="<?php echo @$imagem; ?>">
 </label>
 
 <label class="dir"><strong>Imagem</strong>
@@ -61,35 +61,35 @@
 </label>
 
 <label class="esq"><strong>Embed</strong>
-  <input type="text" name="txt_embed" id="txt_embed" value="">
+  <input type="text" name="embed_youtube"  value="<?php echo @$embed_youtube; ?>">
 </label>
 
 <label class="dir"><strong>Data</strong>
-  <input type="text" name="txt_data" id="txt_data" value="">
+  <input type="text" name="data"  value="<?php echo @$data; ?>">
 </label>
 
   <label><strong>Insira o conteudo</strong>
-   <textarea rows="8"></textarea>
+   <textarea rows="8"><?php echo @$descricao; ?></textarea>
   </label>
 
   <label class="esq"><strong>Slug</strong>
-  <input type="text" name="txt_slug" id="txt_slug" value="">
+  <input type="text" name="slug_post"  value="<?php echo @$slug_post; ?>">
 </label>
 
 <label class="dir"><strong>Views</strong>
-  <input type="text" name="txt_views" id="txt_views" value="">
+  <input type="text" name="views" value="<?php echo @$views; ?>">
 </label>
 
 
 
 	
 		<label>
-		<div class="cx-but">
-			<input type="hidden" name="id" value="">
-			<input type="hidden" name="irpara" value="">							
-			<input type="hidden" name="acao" value="Inserir">										
-			<input type="submit" name="logar" id="logar" value="Inserir" class="but">	
-		</div>	
+			<div class="cx-but">
+						<input type="hidden" name="id" value="<?php echo @$id ?>">							
+						<input type="hidden" name="acao" value="<?php echo ($acao !="")? $acao: "Cadastrar" ?>">
+						<input type="button" name="cancel" value="cancel" onClick="window.location='index.php?link=2';" class="but">									
+						<input type="submit" value="<?php echo ($acao !="")? $acao: "Cadastrar" ?>" class="but">	
+			</div>
 		</label>
 </form>
 
