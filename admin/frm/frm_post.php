@@ -6,17 +6,18 @@
 	if ($acao) {
 		$post = consultar("post","id_post = $id");
 		//var_dump($post);
+
+		$id_categoria = $post[0]["id_categoria"];
+		$post = $post[0]["post"];
+		$slug_post = $post[0]["slug_post"];
+		$imagem = $post[0]["imagem"];
+		$descricao = $post[0]["descricao"];
+		$views = $post[0]["views"];
+		$data = $post[0]["data"];
+		$embed_youtube = $post[0]["embed_youtube"];
+		$ativo = $post[0]["ativo"];
+
 	}
-
-	$post = isset($post[0]["post"]) ? $post[0]["post"]: NULL;
-	$slug_post = isset($post[0]["slug_post"]) ? $post[0]["slug_post"]: NULL;
-	$imagem = isset($post[0]["imagem"]) ? $post[0]["imagem"]: NULL;
-	$descricao = isset($post[0]["descricao"]) ? $post[0]["descricao"]: NULL;
-	$views = isset($post[0]["views"]) ? $post[0]["views"]: NULL;
-	$data = isset($post[0]["data"]) ? $post[0]["data"]: NULL;
-	$embed_youtube = isset($post[0]["embed_youtube"]) ? $post[0]["embed_youtube"]: NULL;
-	$ativo = isset($post[0]["ativo"]) ? $post[0]["ativo"]: NULL;
-
 ?>
 
 <div class="base-direita">
@@ -26,10 +27,16 @@
 	<form action="" method="post">
 <label class="esq">		
 <strong>Escolha uma categoria</strong>
-    <select name="id_modulo">
-          &nbsp;
-         <option value="1"> PHP</option><option value="2"> JAVA</option><option value="3"> CSS</option><option value="4"> JAVA</option><option value="5"> HTML</option> 
-          &nbsp;
+    <select name="txt_id_categoria">
+		  <?php 
+			  $categorias = consultar("categoria");
+			  foreach ($categorias as $categoria){
+				  $cod_categoria = $categoria["id_categoria"];
+				  $selecionado = ($cod_categoria == $id_categoria ) ? "selected": "";
+				  echo "<option value=$cod_categoria $selecionado> $categoria[categoria]</option>";
+			  }
+		  ?>
+          
         </select>
 </label>
    
