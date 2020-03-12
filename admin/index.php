@@ -42,6 +42,8 @@
             $pag[1] = "home.php";
             $pag[2] = "lst/lst_categoria.php";
             $pag[3] = "frm/frm_categoria.php";
+            $pag[4] = "lst/lst_post.php";
+            $pag[5] = "lst/lst_post.php";
 
             if (!empty($link)) {
                 if (file_exists($pag[$link])) {
