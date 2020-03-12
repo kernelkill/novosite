@@ -40,13 +40,34 @@
    <input type="text" name="txt_curso" id="txt_curso" value="" size="110">
   </label>
 
+  <label class="esq"><strong>Imagem</strong>
+  <input type="text" name="txt_imagem" id="txt_imagem" value="">
+</label>
+
+<label class="dir"><strong>Imagem</strong>
+  <input type="file" name="arquivo">
+</label>
+
+<label class="esq"><strong>Embed</strong>
+  <input type="text" name="txt_embed" id="txt_embed" value="">
+</label>
+
+<label class="dir"><strong>Data</strong>
+  <input type="text" name="txt_data" id="txt_data" value="">
+</label>
+
   <label><strong>Insira o conteudo</strong>
    <textarea rows="8"></textarea>
   </label>
 
-  <label><strong>Imagem do post</strong>
-   <input type="file">
-  </label>
+  <label class="esq"><strong>Slug</strong>
+  <input type="text" name="txt_slug" id="txt_slug" value="">
+</label>
+
+<label class="dir"><strong>Views</strong>
+  <input type="text" name="txt_views" id="txt_views" value="">
+</label>
+
 
 
 	
