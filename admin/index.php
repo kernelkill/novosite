@@ -24,7 +24,7 @@
                     <ul>
                         <li><a href="index.php?link=1">Home</a></li>
                         <li><a href="index.php?link=2">Categorias</a> </li>				
-                        <li><a href="index.php?link=3">Posts</a> </li>
+                        <li><a href="index.php?link=4">Posts</a> </li>
                         <li><a href="#">Vídeos</a> </li>
                         <li><a href="#">Comentários</a> </li>
                         <li><a href="#">Usuário</a> </li>
@@ -43,7 +43,7 @@
             $pag[2] = "lst/lst_categoria.php";
             $pag[3] = "frm/frm_categoria.php";
             $pag[4] = "lst/lst_post.php";
-            $pag[5] = "lst/lst_post.php";
+            $pag[5] = "frm/frm_post.php";
 
             if (!empty($link)) {
                 if (file_exists($pag[$link])) {
