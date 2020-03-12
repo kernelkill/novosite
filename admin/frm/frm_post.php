@@ -4,13 +4,18 @@
 	@$id	 	 = $_GET["id"];
 
 	if ($acao) {
-		$valores = consultar("post","id_post = $id");
-		//var_dump($valores);
+		$post = consultar("post","id_post = $id");
+		//var_dump($post);
 	}
-	
 
-	$post = isset($valores[0]["post"]) ? $valores[0]["post"]: NULL;
-	$slug_post = isset($valores[0]["slug_post"]) ? $valores[0]["slug_post"]: NULL;
+	$post = isset($post[0]["post"]) ? $post[0]["post"]: NULL;
+	$slug_post = isset($post[0]["slug_post"]) ? $post[0]["slug_post"]: NULL;
+	$imagem = isset($post[0]["imagem"]) ? $post[0]["imagem"]: NULL;
+	$descricao = isset($post[0]["descricao"]) ? $post[0]["descricao"]: NULL;
+	$views = isset($post[0]["views"]) ? $post[0]["views"]: NULL;
+	$data = isset($post[0]["data"]) ? $post[0]["data"]: NULL;
+	$embed_youtube = isset($post[0]["embed_youtube"]) ? $post[0]["embed_youtube"]: NULL;
+	$ativo = isset($post[0]["ativo"]) ? $post[0]["ativo"]: NULL;
 
 ?>
 
