@@ -24,7 +24,7 @@
 		<h1>CADASTRO DE POSTS</h1>
 <div class="cx-form">
 	<div class="cx-pd">
-	<form action="" method="post">
+	<form action="op/op_post.php" method="post">
 <label class="esq">		
 <strong>Escolha uma categoria</strong>
     <select name="txt_id_categoria">
@@ -87,7 +87,7 @@
 			<div class="cx-but">
 						<input type="hidden" name="id" value="<?php echo @$id ?>">							
 						<input type="hidden" name="acao" value="<?php echo ($acao !="")? $acao: "Cadastrar" ?>">
-						<input type="button" name="cancel" value="cancel" onClick="window.location='index.php?link=2';" class="but">									
+						<input type="button" name="cancel" value="cancel" onClick="window.location='index.php?link=4';" class="but">									
 						<input type="submit" value="<?php echo ($acao !="")? $acao: "Cadastrar" ?>" class="but">	
 			</div>
 		</label>
