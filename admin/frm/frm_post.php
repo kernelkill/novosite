@@ -69,7 +69,7 @@
 </label>
 
   <label><strong>Insira o conteudo</strong>
-   <textarea rows="8"><?php echo @$descricao; ?></textarea>
+   <textarea rows="8" name="descricao" ><?php echo @$descricao; ?></textarea>
   </label>
 
   <label class="esq"><strong>Slug</strong>
