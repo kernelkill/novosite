@@ -49,11 +49,11 @@
 </label>
 
   <label><strong>Título do post</strong>
-   <input type="text" name="post"  value="<?php echo @$post; ?>" >
+   <input type="text" name="post" value="<?php echo @$post; ?>" >
   </label>
 
   <label class="esq"><strong>Imagem</strong>
-  <input type="text" name="imagem"  value="<?php echo @$imagem; ?>">
+  <input type="text" name="imagem" value="<?php echo @$imagem; ?>">
 </label>
 
 <label class="dir"><strong>Imagem</strong>
