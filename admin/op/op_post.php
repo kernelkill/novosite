@@ -20,15 +20,15 @@ $post = $_POST["post"];
 if ($post != "") {
 
     $dados = array(
-        "id_categoria"  => trim($_POST["txt_id_categoria"]),
-        "post"          => trim($_POST["post"]),
-        "slug_post"     => trim($_POST["slug_post"]),
-        "imagem"        => trim($_POST["imagem"]),
-        "descricao"     => trim($_POST["descricao"]),
-        "views"         => trim($_POST["views"]),
-        "data"          => trim($_POST["data"]),
-        "embed_youtube" => trim($_POST["embed_youtube"]),
-        "ativo"         => trim($_POST["ativo"])
+        "id_categoria"  => trim(@$_POST["id_categoria"]),
+        "post"          => trim(@$_POST["post"]),
+        "slug_post"     => trim(@$_POST["slug_post"]),
+        "imagem"        => trim(@$_POST["imagem"]),
+        "descricao"     => trim(@$_POST["descricao"]),
+        "views"         => trim(@$_POST["views"]),
+        "data"          => trim(@$_POST["data"]),
+        "embed_youtube" => trim(@$_POST["embed_youtube"]),
+        "ativo"         => trim(@$_POST["ativo"])
     );
 
     # code...
