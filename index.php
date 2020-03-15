@@ -1,4 +1,8 @@
 <?php 
+	session_start();
+	require "config/config.php";
+	require "config/crud.php";
+	require "config/biblio.php";
 
 	//incluindo o cabeçalho
 	include "cabecalho.php"; 
