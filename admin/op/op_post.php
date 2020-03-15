@@ -5,8 +5,8 @@ require('../../config/crud.php');
 require('../../config/biblio.php');
 
 
-@$acao = $_POST["acao"];
-@$id = $_POST["id"];
+$id = $_POST["id"];
+$acao = $_POST["acao"];
 
 /*
     echo "Ação = " .acao . " e Id = ". $id;
@@ -15,6 +15,7 @@ require('../../config/biblio.php');
 
 
 $post = $_POST["post"];
+$descricao = $_POST["descricao"];
 //$slug = slug($txt_post);
 
 if ($post != "") {

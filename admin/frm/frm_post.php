@@ -53,7 +53,7 @@
   </label>
 
   <label class="esq"><strong>Imagem</strong>
-  <input type="text" name="imagem" value="<?php echo @$imagem ?>">
+  <input type="text" name="imagem" value="<?php echo @$imagem ?>" >
 </label>
 
 <label class="dir"><strong>Imagem</strong>
@@ -61,7 +61,7 @@
 </label>
 
 <label class="esq"><strong>Embed</strong>
-  <input type="text" name="embed_youtube"  value="<?php echo @$embed_youtube ?>">
+  <input type="text" name="embed_youtube"  value="<?php echo @$embed_youtube ?>" >
 </label>
 
 <label class="dir"><strong>Data</strong>
@@ -73,11 +73,11 @@
   </label>
 
   <label class="esq"><strong>Slug</strong>
-  <input type="text" name="slug_post"  value="<?php echo @$slug_post ?>">
+  <input type="text" name="slug_post"  value="<?php echo @$slug_post ?>" >
 </label>
 
 <label class="dir"><strong>Views</strong>
-  <input type="text" name="views" value="<?php echo @$views ?>">
+  <input type="text" name="views" value="<?php echo @$views ?>" >
 </label>
 
 
@@ -85,7 +85,7 @@
 	
 		<label>
 			<div class="cx-but">
-						<input type="hidden" name="id" value="<?php echo @$id ?>">							
+						<input type="hidden" name="id" value="<?php echo @$id ?>" >							
 						<input type="hidden" name="acao" value="<?php echo ($acao !="")? $acao: "Cadastrar" ?>">
 						<input type="button" name="cancel" value="cancel" onClick="window.location='index.php?link=4';" class="but">									
 						<input type="submit" value="<?php echo ($acao !="")? $acao: "Cadastrar" ?>" class="but">	
